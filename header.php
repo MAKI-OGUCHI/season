@@ -10,7 +10,7 @@
 </head>
 <body <?php body_class(); ?> >
     
-    <header>
+   <header>
       <h1><?php bloginfo('name'); ?></h1>
       <p class="tag-line"><?php bloginfo('description'); ?></p>
    </header>
