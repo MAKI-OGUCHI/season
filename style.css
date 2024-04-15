@@ -67,17 +67,17 @@ main{max-width:960px;
 
 /* 季節ごとのページ */
 .wrapper{display:flex;
-         flex-direction:row-reverse;
-@media (max-width:767px){flex-direction:column-reverse;
+         flex-direction:row-reverse;}
+@media (max-width:767px){.wrapper{flex-direction:column-reverse;
                          gap:50px 0;
                          padding:0 30px;}}
-.photo-box{margin-right:40px;
-@media (max-width:767px){margin-right:0;
-                         aspect-ratio:3 /4;
-                     >img{object-fit:cover;
-                          width:100%;
-                          height:100%;}}
-}
+.photo-box{margin-right:40px;}
+@media (max-width:767px){.photo-box{margin-right:0;
+                                    aspect-ratio:3 /4;
+                                >img{object-fit:cover;
+                                     width:100%;
+                                     height:100%;}}}
+                                     
 .text-box>h2{margin-bottom:15px;
              font-size:35px;
              text-align: center;
