@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+/* 
+Theme Name:日本の四季
+Description:複数ページのデータをWP化 
+*/
+
+*{margin:0;padding:0;}
+ul{list-style:none;}
+a{text-decoration:none;}
+img{vertical-align:bottom;}
+
+/* 全ページ共通部分 */
+header{padding:40px 0;}
+h1{text-align:center;
+   font-family: 'Zen Antique Soft', serif;
+   font-size:48px;}
+.tag-line{text-align:center;
+          font-size:22px;
+          font-family:'Klee One', cursive;}
+.g-nav{height:50px;}
+.g-nav>ul{display:flex;
+          width:960px;
+          margin:0 auto;}
+.g-nav li{width:25%;
+            height:50px;}
+.g-nav a{background-color:#096148;
+         display:block;
+         line-height:50px;
+         text-align:center;
+         color:white;
+         border-right:1px solid white;
+         font-family: 'Klee One', cursive;
+         font-size:18px;}
+.g-nav li:first-of-type>a{border-left:1px solid white;}
+.g-nav li:first-of-type>a:hover{background-color:#90B44B;}
+.g-nav li:nth-of-type(2)>a:hover{background-color:#E16B8C;}
+.g-nav li:nth-of-type(3)>a:hover{background-color:#0089A7;}
+.g-nav li:nth-of-type(4)>a:hover{background-color:#D19826;}
+.g-nav li:last-of-type>a:hover{background-color:#91989F;}
+.g-nav li.current>a{color: #ffffff;background-color:#000000;}
+footer{height:100px;
+       background-color: #096148;}
+footer>p{text-align:center;
+        color:white;
+        line-height:100px;}
+
+/* トップページ部分 */
+main{width:960px;
+     margin:30px auto;}
+.main-visual{margin-bottom:80px;}
+.main-text{margin-bottom:80px;
+           text-align:center;}
+.main-text>h2{margin-bottom:15px;
+              font-size:35px;}
+.main-text>p{width:800px;
+             margin:0 auto;
+             line-height:3;}
+
+/* 季節ごとのページ */
+.wrapper{display:flex;
+         flex-direction:row-reverse;}
+.photo-box{margin-right:40px;}
+.text-box>h2{margin-bottom:15px;
+             font-size:35px;
+             text-align: center;
+             font-family: 'Klee One', cursive;}
+
+/* 個別ページ部分 */
+.page-tamplate-spring>.g-nav a{background-color: #E16B8C;}
+.page-tamplate-spring>footer{background-color: #E16B8C;}
+
+.page-tamplate-summer>.g-nav a{background-color: #0089A7;}
+.page-tamplate-summer>footer{background-color: #0089A7;}
+
+.page-tamplate-fall>.g-nav a{background-color: #D19826;}
+.page-tamplate-fall>footer{background-color: #D19826;}
+
+.page-tamplate-winter>.g-nav a{background-color: #91989F;}
+.page-template-winter>footer{background-color: #91989F;}
