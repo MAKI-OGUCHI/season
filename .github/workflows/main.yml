@@ -16,4 +16,4 @@ jobs:
         server: ${{ secrets.FTP_HOST}}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        server-dir: ./om2523.cloudfree.jp/public_html/wp-season/wp-content/themes/season-Git/
+        server-dir: ./om2523.cloudfree.jp/public_html/wp-oguchi/wp-content/themes/season-Git/
